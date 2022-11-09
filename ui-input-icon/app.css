@@ -1,0 +1,54 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 100%;
+  padding: 20px;
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+.field {
+  --max-w: 250px;
+  --py: 15px;
+  --px: 20px;
+  --border: 1px solid #f3f3f3;
+  --border-focus: #6a5af9;
+  --radius: 8px;
+  --fs: 14px;
+  --icon-size: 24px;
+  width: 100%;
+  max-width: var(--max-w);
+  position: relative;
+  display: flex;
+}
+.input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #f3f3f3;
+  padding: var(--py) calc(var(--px) * 2.2) var(--py) var(--px);
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: var(--fs);
+  background-color: transparent;
+  transition: all 0.2s linear;
+}
+.input:focus {
+  border-color: var(--border-focus);
+}
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: var(--px);
+  cursor: pointer;
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
