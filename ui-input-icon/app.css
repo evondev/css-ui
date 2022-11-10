@@ -35,7 +35,7 @@ svg {
 .input {
   width: 100%;
   outline: none;
-  border: 1px solid #f3f3f3;
+  border: var(--border);
   padding: var(--py) calc(var(--px) * 2 + var(--icon-size)) var(--py) var(--px);
   border-radius: var(--radius);
   font-family: inherit;
