@@ -9,6 +9,9 @@ body {
   font-family: "DM Sans", sans-serif;
   font-size: 100%;
   padding: 20px;
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
 img,
 svg {
@@ -33,7 +36,7 @@ svg {
   width: 100%;
   outline: none;
   border: 1px solid #f3f3f3;
-  padding: var(--py) calc(var(--px) * 2.2) var(--py) var(--px);
+  padding: var(--py) calc(var(--px) * 2 + var(--icon-size)) var(--py) var(--px);
   border-radius: var(--radius);
   font-family: inherit;
   font-size: var(--fs);
